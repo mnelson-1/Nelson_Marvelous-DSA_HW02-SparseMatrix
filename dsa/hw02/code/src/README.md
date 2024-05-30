@@ -33,11 +33,10 @@ This is still a demo, so all input files that are to be handled by the program m
 To compile and run the program run the following command in your terminal:
 python(3) -u <program_file-name> <input_file-name> <input_file02-name>
 The python interpreter you use is dependent on the version installed on your machine; for me this will look like this:
-python3 -u [SparseMatrix.py] [easy_sample_01_1.txt] [easy_sample_01_2.txt]
+python3 -u [SparseMatrix.py]
 
 Pls note that square brackets won't be used when actually running the program, this has been included for emphatic basis.
 
-*<input_file-name> - file containing matrix*
 
 ## Example
 
