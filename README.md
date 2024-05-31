@@ -11,16 +11,17 @@ Loads two sparse matrices from an input file
 performs addition
 performs subtraction
 performs multiplication
+depending on what operation you want to perform
 
 ## Requirements
-Python compiler (interpreter): depending on your machine specifications python or python3 is required for this program.
+Python compiler (interpreter): depending on your machine's specifications, python or python3 is required for this program.
 Use python --version to check the version of python on your machine.
 
 ## How to Use
 
 ## Installation
 
-You will need to clone the repository of the project from Github. This will contain the simple shell program and all of its dependencies.
+You'll need to go ahead and clone the project repository from Github. This will contain the simple shell program and all of its dependencies.
 
 ```
 git clone https://github.com/mnelson-1/Nelson_Marvelous-DSA_HW02-SparseMatrix.git
@@ -28,16 +29,14 @@ git clone https://github.com/mnelson-1/Nelson_Marvelous-DSA_HW02-SparseMatrix.gi
 After cloning the repo, navigate using the absolute path: dsa/hw02/code/src/
 using this as the argument to the cd command, in the src directory lies the program.
 
-This is still a demo, so all input files that are to be handled by the program must be in the same directory as the program source file, which is the src directory.
+This is still a demo, so all input files to be handled by the program must be in the same directory as the program source file, which is the src directory.
 
-To compile and run the program run the following command in your terminal:
-python(3) -u <program_file-name> <input_file-name> <input_file02-name>
-The python interpreter you use is dependent on the version installed on your machine; for me this will look like this:
-python3 -u [SparseMatrix.py] [easy_sample_01_1.txt] [easy_sample_01_2.txt]
+To compile and run the program, run the following command in your terminal:
+python(3) -u <program_file-name>
+The python interpreter you use is dependent on the version installed on your machine; for me, this will look like this:
+python3 -u [SparseMatrix.py]
 
-Pls note that square brackets won't be used when actually running the program, this has been included for emphatic basis.
-
-*<input_file-name> - file containing matrix*
+Pls note that square brackets won't be used when running the program, this has been included for emphatic basis.
 
 ## Example
 
@@ -48,7 +47,7 @@ cols=2
 (0, 1, 3)
 (0, 2, 4)
 
-and another file easy_sample_input_03.txt with the following content:
+and another file, easy_sample_input_03.txt with the following content:
 
 rows=1
 cols=2
@@ -56,7 +55,9 @@ cols=2
 (0, 2, 10)
 
 run the program:
-python(3) -u SparseMatrix.py easy_sample_input_02.txt easy_sample_input_03.txt
+python(3) -u SparseMatrix.py 
+It prompts you to enter the file name of the first and second files
+'path to file'
 
 ## Output
 *addition*
@@ -72,12 +73,9 @@ cols=2
 (0, 1, -6)
 
 *multiplication*
-In this case multiplication is not feasible as the value for cols for the first matrix is not equal to the value for rows in the second matrix.
+In this case, multiplication is not feasible as the value for cols for the first matrix is not equal to the value for rows in the second matrix.
 
-Three separate files indicating addition, subtraction, and multiplication:
-addition.txt
-subtraction.txt
-multiplication.txt
+I have given you an output example; however, depending on the operation you chose, it would ask you to name your file or, if no name is given, store the info using a default file name.
 
 ## Handling Different Input Scenarios
 ### Whitespace Handling:
@@ -85,7 +83,7 @@ Lines with only whitespace characters are skipped
 Leading and trailing whitespaces around integers are ignored.
 
 ### Empty Lines:
-Lines that are completely empty or contain only whitespace are skipped.
+Lines that are empty or contain only whitespace are skipped.
 
 
 # Author
